@@ -1,0 +1,12 @@
+name: word2posvec_env
+
+dependencies:
+  - python=3.8
+  - matplotlib
+  - nltk=3.5
+  - numpy
+  - scikit-learn
+  - pip:
+      - jax
+      - jaxlib
+      - adjustText
