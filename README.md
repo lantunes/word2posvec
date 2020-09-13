@@ -38,7 +38,7 @@ A corpus consists of a sequence of <img src="https://render.githubusercontent.co
 and with a context window of size <img src="https://render.githubusercontent.com/render/math?math=c"/>,
 the task is to maximize the average log probability:
 
-![\frac{1}{T}\sum_{t=1}^{T}\sum_{-c \leqslant j \leqslant c, j \neq 0}log \ p(w_{t+j}|w_{t})](resources/eqn1.png)
+<img src="resources/eqn1.png" alt="\frac{1}{T}\sum_{t=1}^{T}\sum_{-c \leqslant j \leqslant c, j \neq 0}log \ p(w_{t+j}|w_{t})" width="250"/>
 
 ## word2posvec
 
@@ -51,6 +51,6 @@ a sequence of <img src="https://render.githubusercontent.com/render/math?math=T_
 one tag for each occurrence of word <img src="https://render.githubusercontent.com/render/math?math=w"/>.
 The task is to maximize the average log probability:
 
-![\frac{1}{\left | W \right |}\sum_{w \in W}\sum_{t=1}^{T_{w}}log \ p(\textsc{pos}_{t}|w)](resources/eqn2.png)
+<img src="resources/eqn2.png" alt="\frac{1}{\left | W \right |}\sum_{w \in W}\sum_{t=1}^{T_{w}}log \ p(\textsc{pos}_{t}|w)" width="250"/>
 
 ## Commentary on learning POS embeddings with the word2vec approach
