@@ -41,9 +41,9 @@ The task is to maximize the average log probability:
 
 <img src="resources/word2posvec.png" alt="word2posvec" width="310"/>
 
-A corpus consists of words <img src="https://render.githubusercontent.com/render/math?math=W"/>,
+A tagged corpus consists of words <img src="https://render.githubusercontent.com/render/math?math=W"/>,
 and each word <img src="https://render.githubusercontent.com/render/math?math=w%20\in%20W"/> has associated with it
-a sequence of POS tags, <img src="https://render.githubusercontent.com/render/math?math=POS_{1},%20POS_{2},%20...,%20POS_{T_{w}}"/>,
+a sequence of part of speech tags, <img src="https://render.githubusercontent.com/render/math?math=POS_{1},%20POS_{2},%20...,%20POS_{T_{w}}"/>,
 one tag for each occurrence of word <img src="https://render.githubusercontent.com/render/math?math=w"/>,
 for a total of <img src="https://render.githubusercontent.com/render/math?math=T_{w}"/> tags for that word.
 The task is to maximize the average log probability:
