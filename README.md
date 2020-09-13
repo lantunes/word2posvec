@@ -50,4 +50,4 @@ and a sequence of corresponding <img src="https://render.githubusercontent.com/r
 part of speech tags <img src="https://render.githubusercontent.com/render/math?math=s_{1},%20s_{2},...,%20s_{T}"/>.
 The task is to maximize the average log probability:
 
-<img src="resources/eqn2.png" alt="\frac{1}{T}\sum_{t=1}^{T}log \ p(s_{t}|w_{t})" width="250"/>
+<img src="resources/eqn2.png" alt="\frac{1}{T}\sum_{t=1}^{T}log \ p(s_{t}|w_{t})" width="150"/>
