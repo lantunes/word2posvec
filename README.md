@@ -33,7 +33,9 @@ adjectives, and yellow points are adverbs.
 
 <img src="resources/word2vec.png" alt="word2vec" width="310"/>
 
-The task is to maximize the average log probability:
+A corpus consists of a sequence of words <img src="https://render.githubusercontent.com/render/math?math=w_{1},%20w_{2},...,%20w_{T}"/>,
+and with a context window of size <img src="https://render.githubusercontent.com/render/math?math=c"/>,
+the task is to maximize the average log probability:
 
 ![\frac{1}{T}\sum_{t=1}^{T}\sum_{-c \leqslant j \leqslant c, j \neq 0}log \ p(w_{t+j}|w_{t})](resources/eqn1.png)
 
@@ -43,7 +45,7 @@ The task is to maximize the average log probability:
 
 A tagged corpus consists of words <img src="https://render.githubusercontent.com/render/math?math=W"/>,
 and each word <img src="https://render.githubusercontent.com/render/math?math=w%20\in%20W"/> has associated with it
-a sequence of part of speech tags, <img src="https://render.githubusercontent.com/render/math?math=POS_{1},%20POS_{2},%20...,%20POS_{T_{w}}"/>,
+a sequence of part of speech tags, <img src="https://render.githubusercontent.com/render/math?math=POS_{1},%20POS_{2},...,%20POS_{T_{w}}"/>,
 one tag for each occurrence of word <img src="https://render.githubusercontent.com/render/math?math=w"/>,
 for a total of <img src="https://render.githubusercontent.com/render/math?math=T_{w}"/> tags for that word.
 The task is to maximize the average log probability:
