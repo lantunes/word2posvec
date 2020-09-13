@@ -41,10 +41,12 @@ The task is to maximize the average log probability:
 
 <img src="resources/word2posvec.png" alt="word2posvec" width="310"/>
 
-A corpus consists of words _*W*_, and each word <img src="https://render.githubusercontent.com/render/math?math=w%20\in%20W"/> has associated with it
-a sequence of POS tags, _*POS<sub>1</sub>, POS<sub>2</sub>, ... , POS<sub>T<sub>w</sub></sub>*_, one tag for each
-occurrence of word w. The task is to maximize the average log
-probability:
+A corpus consists of words <img src="https://render.githubusercontent.com/render/math?math=W"/>,
+and each word <img src="https://render.githubusercontent.com/render/math?math=w%20\in%20W"/> has associated with it
+a sequence of POS tags, <img src="https://render.githubusercontent.com/render/math?math=POS_{1},%20POS_{2},%20...,%20POS_{T_{w}}"/>,
+one tag for each occurrence of word <img src="https://render.githubusercontent.com/render/math?math=w"/>,
+for a total of <img src="https://render.githubusercontent.com/render/math?math=T_{w}"/> tags for that word.
+The task is to maximize the average log probability:
 
 ![\frac{1}{\left | W \right |}\sum_{w \in W}\sum_{t=1}^{T_{w}}log \ p(\textsc{pos}_{t}|w)](resources/eqn2.png)
 
