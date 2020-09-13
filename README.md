@@ -44,13 +44,10 @@ the task is to maximize the average log probability:
 
 <img src="resources/word2posvec.png" alt="word2posvec" width="310"/>
 
-A tagged corpus consists of words <img src="https://render.githubusercontent.com/render/math?math=W"/>,
-and each word <img src="https://render.githubusercontent.com/render/math?math=w%20\in%20W"/> has associated with it
-a sequence of <img src="https://render.githubusercontent.com/render/math?math=T_{w}"/> part of speech tags,
-<img src="https://render.githubusercontent.com/render/math?math=POS_{1},%20POS_{2},...,%20POS_{T_{w}}"/>,
-one tag for each occurrence of word <img src="https://render.githubusercontent.com/render/math?math=w"/>.
+A tagged corpus consists of a sequence of <img src="https://render.githubusercontent.com/render/math?math=T"/>
+words <img src="https://render.githubusercontent.com/render/math?math=w_{1},%20w_{2},...,%20w_{T}"/>,
+and a sequence of corresponding <img src="https://render.githubusercontent.com/render/math?math=T"/>
+part of speech tags <img src="https://render.githubusercontent.com/render/math?math=s_{1},%20s_{2},...,%20s_{T}"/>.
 The task is to maximize the average log probability:
 
-<img src="resources/eqn2.png" alt="\frac{1}{\left | W \right |}\sum_{w \in W}\sum_{t=1}^{T_{w}}log \ p(\textsc{pos}_{t}|w)" width="250"/>
-
-## Commentary on learning POS embeddings with the word2vec approach
+<img src="resources/eqn2.png" alt="\frac{1}{T}\sum_{t=1}^{T}log \ p(s_{t}|w_{t})" width="250"/>
